@@ -1,0 +1,4 @@
+# The Rust version Talk is built with.
+[toolchain]
+channel = "1.93"
+components = ["rust-src"]

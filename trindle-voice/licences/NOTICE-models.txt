@@ -1,0 +1,9 @@
+Models and voices Talk fetches or uses
+
+Whisper base speech recognition: by OpenAI, MIT licence
+(https://huggingface.co/openai/whisper-base).
+
+Supertonic 2 model and voices: by Supertone Inc., BigScience Open RAIL-M License (full text in
+supertonic-OpenRAIL-M.txt; its use restrictions pass on to anyone who uses the model), from
+https://huggingface.co/Supertone/supertonic-2. The code that runs it in Talk is Trindle's own;
+Supertone's published reference code is MIT. Used as published.

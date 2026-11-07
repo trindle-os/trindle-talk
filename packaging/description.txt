@@ -1,0 +1,5 @@
+Talk lets you speak instead of typing. Press its icon in the ring, say what you want to write, and a moment later your words appear under Talk's name in the ring, with um and er left out and British spelling if you like. Turn on Read back and Talk says your words aloud too, in English, in the voice you choose.
+
+All the listening and speaking is done on your own computer, so nothing you say leaves it. The first time you press Talk it fetches its speech recognition (about 293 MB) into its own folder, which needs the network once; Read back fetches its voice (about 264 MB) the same way. After that Talk works offline. While it is working it needs about 1 GB of free memory.
+
+Talk asks for the microphone (to hear you), sound (to read back), the network (to fetch those files once) and notifications (to show your words), and you choose which to allow. Talk cannot yet type into other windows or read out words you highlight.

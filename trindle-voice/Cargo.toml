@@ -1,0 +1,28 @@
+# The program that listens and speaks for Talk.
+[package]
+name = "talk-voice"
+description = "Trindle's voice: speech into words and words into speech, on the machine"
+version = "0.1.0"
+edition = "2024"
+license = "GPL-3.0-or-later"
+
+[dependencies]
+candle-core = "0.11"
+candle-nn = "0.11"
+candle-transformers = "0.11"
+serde_json = "1"
+sha2 = "0.11"
+trindle-common = { git = "https://github.com/trindle-os/trindle-toolkit", rev = "3b1e06bc4d4ccb94b9d7b876feecc37aa4765e74" }
+ureq = "3"
+engine = { package = "trindle-voice", git = "https://github.com/trindle-os/trindle-voice.git", rev = "94c9c5a8433c76a442913b0a2c7310b8e215a6bc" }
+
+[profile.release]
+strip = true
+lto = true
+codegen-units = 1
+
+[workspace]
+
+[[bin]]
+name = "trindle-voice"
+path = "src/main.rs"

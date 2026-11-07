@@ -1,0 +1,24 @@
+# What cargo deny holds the dependencies to.
+[graph]
+targets = ["x86_64-unknown-linux-gnu"]
+
+[advisories]
+unmaintained = "workspace"
+
+[licenses]
+allow = [
+    "GPL-3.0-or-later",
+    "MIT",
+    "Apache-2.0",
+]
+confidence-threshold = 0.9
+
+[bans]
+multiple-versions = "allow"
+
+[sources]
+unknown-registry = "deny"
+unknown-git = "deny"
+allow-git = [
+    "https://github.com/trindle-os/trindle-toolkit",
+]
